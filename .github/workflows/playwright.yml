@@ -9,6 +9,7 @@ on:
     - cron: '0 12 * * *' 
     - cron: '0 18 * * *' 
     - cron: '0 20 * * *' 
+    - cron: '0 0 * * *'
 jobs:
   test:
     timeout-minutes: 60
