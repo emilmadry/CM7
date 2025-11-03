@@ -16,5 +16,10 @@ test('get started link', { tag: '@regression' },  async ({ page }) => {
 
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+
+  console.log(process.env.USER_PASSWORD );
+
+
+  // await page.locator('#password').fill(process.env.USER_PASSWORD ?? '');
 });
 
